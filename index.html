@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seu Nome — Portfolio</title>
+  <meta name="description" content="Portfolio criativo de [Seu Nome] — Desenvolvedor & Designer" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div id="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">S<span>.</span>N</a>
+    <ul class="nav-links">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#experience">Experiência</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Vamos conversar →</a>
+    <div class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-badge">Disponível para projetos</div>
+    <h1 class="hero-title">
+      <span class="line"><span>Construindo</span></span>
+      <span class="line"><span>experiências <em class="italic">digitais</em></span></span>
+      <span class="line"><span>que importam.</span></span>
+    </h1>
+    <div class="hero-footer">
+      <div>
+        <p class="hero-desc">
+          Olá pessoal, me chamo <strong>Samuel Felcman</strong> — Desenvolvedor Full Stack apaixonado por interfaces bonitas,
+          código limpo e produtos que resolvem problemas reais.
+        </p>
+        <div class="hero-cta" style="margin-top:24px">
+          <a href="#projects" class="btn-primary">Ver projetos <span>↓</span></a>
+          <a href="#contact" class="btn-secondary">Entrar em contato →</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num" data-count="42">0</div>
+          <div class="stat-label">Projetos entregues</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="5">0</div>
+          <div class="stat-label">Anos de experiência</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="18">0</div>
+          <div class="stat-label">Clientes satisfeitos</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      Scroll
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="about">
+    <div class="section-tag">Sobre mim</div>
+    <div class="about-grid reveal">
+      <div class="about-image-wrap">
+        <div class="about-image-frame">
+          <!-- Troque o src pela sua foto -->
+          <img src="{src,public}/WhatsApp Image 2026-02-02 at 08.40.15.jpeg" alt="Foto de perfil" />
+          <div class="about-label">⚡ Open to work</div>
+        </div>
+        <div class="about-image-accent"></div>
+      </div>
+      <div class="about-text">
+        <div class="section-title" style="font-size:clamp(28px,3.5vw,48px)">
+          Desenvolvedor apaixonado por<br/><span style="color:var(--accent)">resolver problemas</span>.
+        </div>
+        <p>
+          Com <strong>5+ anos de experiência</strong> em desenvolvimento web, trabalho na interseção entre design e engenharia — construindo produtos que são tanto bonitos quanto funcionais.
+        </p>
+        <p>
+          Tenho forte background em <strong>React, Node.js e design systems</strong>. Acredito que um bom produto começa com entender profundamente o usuário e termina com atenção obsessiva ao detalhe.
+        </p>
+        <p>
+          Fora do código, você me encontra explorando fotografia analógica, aprendendo sobre arquitetura ou treinando Jiu-Jitsu.
+        </p>
+        <div class="skills-grid">
+          <div class="skill-item"><span class="skill-icon">⚛️</span><span class="skill-name">React / Next.js</span></div>
+          <div class="skill-item"><span class="skill-icon">🟢</span><span class="skill-name">Node.js / Express</span></div>
+          <div class="skill-item"><span class="skill-icon">🐘</span><span class="skill-name">PostgreSQL</span></div>
+          <div class="skill-item"><span class="skill-icon">🎨</span><span class="skill-name">Figma / Design</span></div>
+          <div class="skill-item"><span class="skill-icon">☁️</span><span class="skill-name">AWS / Vercel</span></div>
+          <div class="skill-item"><span class="skill-icon">🐳</span><span class="skill-name">Docker / CI-CD</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK MARQUEE -->
+  <section id="stack" style="padding:60px 0">
+    <div style="padding:0 48px;margin-bottom:40px">
+      <div class="section-tag reveal">Tecnologias</div>
+      <h2 class="section-title reveal" style="margin-bottom:0">Meu stack <span style="color:var(--accent)">técnico</span>.</h2>
+    </div>
+    <div class="stack-marquee-wrap">
+      <div class="stack-marquee" id="marquee1">
+        <span class="stack-pill"><span class="stack-pill-dot"></span>React</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>TypeScript</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Next.js</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Node.js</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>PostgreSQL</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Redis</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Docker</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>AWS</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Tailwind CSS</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>GraphQL</span>
+        <!-- duplicata para loop -->
+        <span class="stack-pill"><span class="stack-pill-dot"></span>React</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>TypeScript</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Next.js</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Node.js</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>PostgreSQL</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Redis</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Docker</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>AWS</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Tailwind CSS</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>GraphQL</span>
+      </div>
+    </div>
+    <div class="stack-marquee-wrap" style="margin-top:16px">
+      <div class="stack-marquee reverse">
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Figma</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Prisma</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Python</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Stripe</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Vercel</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>GitHub Actions</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Jest</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Storybook</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>MongoDB</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Linux</span>
+        <!-- duplicata -->
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Figma</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Prisma</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Python</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Stripe</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Vercel</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>GitHub Actions</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Jest</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Storybook</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>MongoDB</span>
+        <span class="stack-pill"><span class="stack-pill-dot"></span>Linux</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projects">
+    <div class="section-tag reveal">Portfólio</div>
+    <h2 class="section-title reveal">Projetos <span style="color:var(--accent)">selecionados</span>.</h2>
+
+    <div class="projects-grid reveal">
+      <!-- Projeto 1 - Destaque -->
+      <div class="project-card featured">
+        <div class="project-thumb">
+          <div class="mock" style="background:linear-gradient(135deg,#0d1f0d,#1a3a1a)">🌿</div>
+          <div class="project-thumb-overlay">
+            <a href="https://samfelcman.github.io/EcoStats/" target="_blank" class="project-overlay-btn">Ver projeto →</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">HTML5 & CSS3</span>
+            <span class="project-tag">Globe.gl \ Three.js</span>
+            <span class="project-tag">REST Countries API</span>
+            <span class="project-tag">World Bank API</span>
+            <span class="project-tag">ExchangeRate API</span>
+            <span class="project-tag">CoinGecko API</span>
+          </div>
+          <h3 class="project-name">EcoStats</h3>
+          <p class="project-desc">Painel com um globo 100% interativo para explorar dados de população, economia e câmbio de qualquer pais do mundo, direto em um globo 3D. EcoStats será mais que um painel global, e sim uma verdadeira ferramenta de exploração de dados, com comparações, rankings e muito mais.</p>
+          <div class="project-links">
+            <a href="#" class="project-link">↗ Live Demo</a>
+            <a href="https://samfelcman.github.io/EcoStats/" target="_blank" class="project-link">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 2 -->
+      <div class="project-card small">
+        <div class="project-thumb">
+          <div class="mock" style="background:linear-gradient(135deg,#0d0d1f,#1a1a3a)">🎵</div>
+          <div class="project-thumb-overlay">
+            <a href="#" class="project-overlay-btn">Ver projeto →</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">Spotify API</span>
+          </div>
+          <h3 class="project-name">Soundwave Dashboard</h3>
+          <p class="project-desc">Dashboard de análise musical pessoal integrado ao Spotify com visualizações interativas.</p>
+          <div class="project-links">
+            <a href="#" class="project-link">↗ Demo</a>
+            <a href="#" class="project-link">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 3 -->
+      <div class="project-card small">
+        <div class="project-thumb">
+          <div class="mock" style="background:linear-gradient(135deg,#1f0d0d,#3a1a1a)">🤖</div>
+          <div class="project-thumb-overlay">
+            <a href="#" class="project-overlay-btn">Ver projeto →</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">OpenAI</span>
+          </div>
+          <h3 class="project-name">AI Content Studio</h3>
+          <p class="project-desc">Ferramenta de geração de conteúdo com IA para equipes de marketing.</p>
+          <div class="project-links">
+            <a href="#" class="project-link">↗ Demo</a>
+            <a href="#" class="project-link">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 4 - Wide -->
+      <div class="project-card featured">
+        <div class="project-thumb">
+          <div class="mock" style="background:linear-gradient(135deg,#1f1a0d,#3a300d)">📊</div>
+          <div class="project-thumb-overlay">
+            <a href="#" class="project-overlay-btn">Ver projeto →</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">D3.js</span>
+            <span class="project-tag">WebSocket</span>
+          </div>
+          <h3 class="project-name">FinTrack Analytics</h3>
+          <p class="project-desc">Plataforma de análise financeira em tempo real com gráficos interativos, alertas configuráveis e relatórios automatizados para gestores.</p>
+          <div class="project-links">
+            <a href="#" class="project-link">↗ Live Demo</a>
+            <a href="#" class="project-link">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card small">
+        <div class="project-thumb">
+          <div class="mock" style="background:linear-gradient(135deg,#0d1f1f,#0d3a3a)">🗺️</div>
+          <div class="project-thumb-overlay">
+            <a href="#" class="project-overlay-btn">Ver projeto →</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">React Native</span>
+            <span class="project-tag">Maps API</span>
+          </div>
+          <h3 class="project-name">TripMate App</h3>
+          <p class="project-desc">App de planejamento de viagens colaborativo com mapas offline.</p>
+          <div class="project-links">
+            <a href="#" class="project-link">↗ Demo</a>
+            <a href="#" class="project-link">⌥ GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA -->
+  <section id="experience">
+    <div class="section-tag reveal">Carreira</div>
+    <h2 class="section-title reveal">Minha <span style="color:var(--accent)">trajetória</span>.</h2>
+
+    <div class="exp-list reveal">
+      <div class="exp-item">
+        <div class="exp-period">2022 — Presente</div>
+        <div>
+          <div class="exp-company">Empresa XYZ</div>
+          <div class="exp-role">Senior Full Stack Developer</div>
+          <p class="exp-desc">Liderei a arquitetura e desenvolvimento do produto principal, reduzindo o tempo de carregamento em 60% e aumentando conversão em 23%. Mentoring de 4 desenvolvedores juniores.</p>
+        </div>
+        <div class="exp-badge">Full-time</div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-period">2020 — 2022</div>
+        <div>
+          <div class="exp-company">Startup ABC</div>
+          <div class="exp-role">Frontend Developer</div>
+          <p class="exp-desc">Construí o design system do zero e migrei a aplicação de Vue para React, aumentando a produtividade do time em 40%.</p>
+        </div>
+        <div class="exp-badge">Full-time</div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-period">2019 — 2020</div>
+        <div>
+          <div class="exp-company">Agência Digital</div>
+          <div class="exp-role">Web Developer</div>
+          <p class="exp-desc">Desenvolvi sites e e-commerces para clientes de médio e grande porte, com foco em performance e SEO.</p>
+        </div>
+        <div class="exp-badge">CLT</div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-period">2018 — 2019</div>
+        <div>
+          <div class="exp-company">Freelancer</div>
+          <div class="exp-role">Developer & Designer</div>
+          <p class="exp-desc">Projetos independentes para clientes nacionais e internacionais, do briefing ao deploy.</p>
+        </div>
+        <div class="exp-badge">PJ</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contact">
+    <div class="section-tag reveal">Contato</div>
+    <div class="contact-grid reveal">
+      <div>
+        <h2 class="contact-big">
+          Vamos<br/><span class="hl">trabalhar</span><br/>juntos?
+        </h2>
+        <a href="mailto:seuemail@email.com" class="contact-email">
+          📬 samuelfelcman17@gmail.com
+        </a>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/samuel-felcman-179741252/" target="_blank" class="social-link">
+            <svg width="26" height="26" viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/samfelcman" target="_blank" class="social-link">
+            <svg width="26" height="26" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.instagram.com/samfelcman/" target="_blank" class="social-link">
+            <svg width="26" height="26" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="contact-form">
+          <div class="form-group">
+            <label class="form-label" for="name">Nome</label>
+            <input class="form-input" type="text" id="name" placeholder="Seu nome completo" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">E-mail</label>
+            <input class="form-input" type="email" id="email" placeholder="seu@email.com" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Mensagem</label>
+            <textarea class="form-textarea" id="message" placeholder="Conte sobre o seu projeto..."></textarea>
+          </div>
+          <button class="form-btn" onclick="submitForm()">
+            Enviar mensagem ✉️
+          </button>
+          <div class="form-success" id="form-success">
+            ✅ Mensagem enviada! Retorno em até 24h.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-copy">© 2026 Samuel Felcman. Feito com ☕ no Brasil.</div>
+    <div class="footer-links">
+      <a href="#hero">Início</a>
+      <a href="#projects">Projetos</a>
+      <a href="#contact">Contato</a>
+    </div>
+  </footer>
+
+  <script>
+    // ─── CURSOR ───
+    const dot = document.querySelector('.cursor-dot');
+    const ring = document.querySelector('.cursor-ring');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+    document.addEventListener('mousedown', () => document.body.classList.add('clicking'));
+    document.addEventListener('mouseup', () => document.body.classList.remove('clicking'));
+    function animCursor() {
+      dot.style.left = mx + 'px'; dot.style.top = my + 'px';
+      rx += (mx - rx) * 0.13; ry += (my - ry) * 0.13;
+      ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+      requestAnimationFrame(animCursor);
+    }
+    animCursor();
+    document.querySelectorAll('a, button, .project-card, .skill-item, .social-link').forEach(el => {
+      el.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
+      el.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
+    });
+
+    // ─── NAV SCROLL ───
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // ─── HAMBURGER ───
+    const hamburger = document.getElementById('hamburger');
+    hamburger.addEventListener('click', () => {
+      navbar.classList.toggle('open');
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => navbar.classList.remove('open'));
+    });
+
+    // ─── REVEAL ON SCROLL ───
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // ─── CONTADORES ───
+    function animateCount(el, target, duration = 1800) {
+      let start = 0;
+      const step = timestamp => {
+        if (!start) start = timestamp;
+        const progress = Math.min((timestamp - start) / duration, 1);
+        const ease = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(ease * target);
+        if (progress < 1) requestAnimationFrame(step);
+        else el.textContent = target;
+      };
+      requestAnimationFrame(step);
+    }
+    const countObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const target = parseInt(e.target.dataset.count);
+          animateCount(e.target, target);
+          countObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('[data-count]').forEach(el => countObs.observe(el));
+
+    // ─── FORM SIMULADO ───
+    function submitForm() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      if (!name || !email || !message) {
+        alert('Preencha todos os campos!');
+        return;
+      }
+      document.getElementById('form-success').style.display = 'block';
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+      setTimeout(() => {
+        document.getElementById('form-success').style.display = 'none';
+      }, 5000);
+    }
+
+    // ─── PARALLAX HERO GRID ───
+    window.addEventListener('scroll', () => {
+      const heroGrid = document.querySelector('.hero-grid-bg');
+      if (heroGrid) {
+        heroGrid.style.transform = `translateY(${window.scrollY * 0.3}px)`;
+      }
+    });
+  </script>
+</body>
+</html>
