@@ -183,6 +183,8 @@
 
     .text-name {
       color: #3564ff;
+      font-size: 18px;
+      text-decoration: dashed;
     }
     @keyframes fadeIn { to { opacity: 1; } }
     .hero-cta {
